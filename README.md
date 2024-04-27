@@ -1,2 +1,2 @@
-# Java_Projects
-Java real world projects
+#Learning_Java
+Learning Java by working on mini projects..
