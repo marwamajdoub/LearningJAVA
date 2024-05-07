@@ -15,7 +15,7 @@ public class Magasin {
 	public Magasin(Articles[] produits) {
       
     }
-    void ajouteElectro(Electro e,int pos,int n1 ) {
+    public void ajouteElectro(Electro e,int pos,int n1 ) {
 		if (pos < n1) {
             tab1[pos] = e;
             n1++;
@@ -24,7 +24,7 @@ public class Magasin {
         }
     }
 	
-	void venteELectro(Electro e ,int pos,int q,int n1) {
+	public void venteELectro(Electro e ,int pos,int q,int n1) {
         if (pos < n1 && tab1[pos] == e) {
             double revenus = e.vendre(q);
             revenus += revenus;
@@ -35,7 +35,7 @@ public class Magasin {
     }
 		
 	
-	void ajouterPrimeur(Primeurs p,int pos,int n2){
+	public void ajouterPrimeur(Electro p,int pos,int n2){
         if (pos < n2) {
             tab1[pos] = p;
             n2++;

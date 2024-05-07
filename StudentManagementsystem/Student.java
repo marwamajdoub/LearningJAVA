@@ -36,14 +36,15 @@ public class Student {
 	      public void enroll() {
 	    	  do {
 	    		  System.out.println("Enter courses to enroll or to quit (Q)");
-		    	  Scanner in = new Scanner(System.in);
-		    	  String course =in.nextLine();
-		    	  if (!course.equals("Q")) {
-		    		  courses=courses+"\n"+course;
-		    		  balance=balance+costcourse;}
-		    		  
-		    	  else {
-		    		  break;}
+		    	   (Scanner in = new Scanner(System.in)) {
+					String course =in.nextLine();
+					  if (!course.equals("Q")) {
+						  courses=courses+"\n"+course;
+						  balance=balance+costcourse;}
+						  
+					  else {
+						  break;}
+				}
 	    	  }while(1!=0);
 	    	  System.out.println("enrolled in :"+courses);
     		  System.out.println("balance:"+balance);
@@ -54,7 +55,8 @@ public class Student {
 	    }
 	     public void payment () {
 	    	 System.out.println("Enter your payment");
-	    	  Scanner in = new Scanner(System.in);
+	    	  @SuppressWarnings("resource")
+			Scanner in = new Scanner(System.in);
 	    	  int pay=in.nextInt();
 	    	 balance= balance-pay;
 	    	 System.out.println("Thank you for your payment");

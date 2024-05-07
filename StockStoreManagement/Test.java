@@ -1,6 +1,9 @@
 package StockStoreManagement;
 
-public class Main {
+public class Test {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
       
         Articles[] produits = new Articles[2];
